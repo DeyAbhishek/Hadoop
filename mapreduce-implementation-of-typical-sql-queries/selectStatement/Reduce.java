@@ -15,6 +15,9 @@ public class Reduce extends Reducer<LongWritable,Text,NullWritable,Text> {
 
         for (Text value : values) {
             context.write( NullWritable.get(), value);
+            //see that how null is used as key in the output as 
+            //the reducer is acting almost like an identity reducer
+            //just emitting the data that it is getting 
         }
 
 

@@ -28,6 +28,8 @@ public class Map extends Mapper<LongWritable,Text,LongWritable,Text> {
            // symbol,     open,        close,         date
 
             context.write(key, new Text(output));
+            //note that we are using key as key so that no grouping is done (as grouping is not required here)
+            //as keys are all unique since keys are the line numbers
         }
 
 

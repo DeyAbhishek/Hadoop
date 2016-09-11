@@ -1,5 +1,5 @@
 SQL Select, Where 
-Main Class: select.select
+Main Class: selectStatement.select
 Data : dataset/sql/sample.csv
 
 SQL Grouping
